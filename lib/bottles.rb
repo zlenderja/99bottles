@@ -1,7 +1,7 @@
 class Bottles
   def verse(number)
-    "#{number} bottles of beer on the wall, " +
-      "#{number} bottles of beer.\n" +
+    "#{pluralize_bottle(number)} of beer on the wall, " +
+      "#{pluralize_bottle(number)} of beer.\n" +
       "Take one down and pass it around, " +
       "#{pluralize_bottle(number - 1)} of beer on the wall.\n"
   end
