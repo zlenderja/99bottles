@@ -30,15 +30,7 @@ class Bottles
     verses.reverse.join("\n")
   end
 
-  private
-
-  def pluralize_bottle(count)
-    if count == 1
-      "1 bottle"
-    elsif count == 0
-      "no more bottles"
-    else
-      "#{count} bottles"
-    end
+  def song
+    verses(99, 0)
   end
 end
