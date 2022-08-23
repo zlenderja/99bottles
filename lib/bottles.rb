@@ -19,10 +19,10 @@ class Bottles
   end
 
   def verses(first, last)
-    verses = (last..first).to_a.map do |number|
+    verses_collection = (last..first).to_a.reverse.map do |number|
       verse(number)
     end
-    verses.reverse.join("\n")
+    verses_collection.join("\n")
   end
 
   def song
