@@ -32,9 +32,7 @@ class Bottles
   private
 
   def pluralize_bottle(count)
-    if count == 0
-      "no more bottles"
-    elsif count == 1
+    if count == 1
       "1 bottle"
     else
       "#{count} bottles"
